@@ -17,7 +17,6 @@ h1{
     text-align: center;
 }    
 body{
-    background-image:url(C:\Users\Acer\Documents\GitHub\satvikweb\Images\kheer.jpg);
     background-position: center;
     background-size: cover;
     font-family:sans-serif;
@@ -37,6 +36,33 @@ padding-bottom:5px;
     border: none;
     outline: none;
     background:transparent ;
-    color:black;
+    color:#000000;
+}
+.link
+{
+    position: center;
+    color:blue;
+    text-decoration: none; 
 }
 
+.gone
+{
+    position: center;
+    height: 45px;
+    width: 45px;
+}
+
+.login_btn
+{
+    position: center;
+    border: 1px #fff solid;
+    width:80%;
+    background: transparent;
+    display:block;
+    margin:40px auto 20px;
+    padding:10px 0;
+    outline:none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
