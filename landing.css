@@ -1,0 +1,85 @@
+*{
+    background-color: #f5f1e1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1a5238;
+    font-size:46;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 1rem;
+    color: #7f9a3c;
+    font-weight: bold;
+  
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-side {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .r_s{
+    min-height: 4;
+    width : auto;
+  }
+   
+  
+  .image-container {
+   
+    aspect-ratio:auto 1000/200;
+    width:1000px
+    
+  }
+  
+   /* Clickable Section */
+          .clickable-section {
+              display: flex;
+              justify-content: space-around;
+              padding: 60px 20px;
+              background-color: #f9f9f9;
+              text-align: center;
+          }
+  
+          .clickable-card {
+              background-color: #1a5238;
+              border-radius: 10px ;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              padding: 30px;
+              width: 30%;
+              margin: 20px;
+              cursor: pointer;
+              transition: transform 0.3s ease;
+          }
+  
+          .clickable-card:hover {
+              transform: translateY(-10px);
+          }
+  
+          .clickable-card h3 {
+              color: #000000;
+              border:solid;
+              border-color:#ffb233;
+              background-color:#FFB233;
+              height:10%;
+              border-radius:0px 0px 10px 10px ;
+              padding: 16px;
+          }
+  
+          .clickable-card p {
+              color: #555;
+          }
+  
+  
+         .pic{
+         border-radius: 8px 8px 0px 0px ;
+  }
