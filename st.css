@@ -1,3 +1,14 @@
 .main{
     text-align:"centre"
     }
+.mainul{
+    background-color: #f9f9f9;
+    border-radius: 10px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 70px;
+    width: 30%;
+    margin: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+}    
