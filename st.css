@@ -1,14 +1,42 @@
-.main{
+*{
+    margin:0;
+    padding:0;
+ }
+h1{
     text-align:"centre"
     }
 .mainul{
     background-color: #f9f9f9;
     border-radius: 10px ;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 70px;
+    box-shadow:  8px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px; 
     width: 30%;
-    margin: 100px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    margin: 120px;
+    margin-left: 35%;
     text-align: center;
 }    
+body{
+    background-image:url(C:\Users\Acer\Documents\GitHub\satvikweb\Images\kheer.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family:sans-serif;
+    background-color: rgb(5, 219, 238);
+}
+
+.input
+{
+margin: 31px auto;
+width: 80%;
+border-bottom:1px solid #fff;
+padding-top:10px;
+padding-bottom:5px;
+}
+.input input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background:transparent ;
+    color:black;
+}
+
