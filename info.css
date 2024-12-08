@@ -68,3 +68,69 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+
+.grid-layout div {
+    background: #f0f4f0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-layout h3 {
+    margin-top: 0;
+    color: #6aa84f;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between the arrow and the text container */
+}
+
+.arrow {
+    width: 40px; /* Size of the arrow */
+    transform: rotate(90deg); /* Ensure arrow orientation */
+    opacity: 0.8;
+    align-self: flex-start; /* Align arrow with the top of each step */
+}
+
+.step {
+    background: #f0f4f0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ensure the step text fills the remaining space */
+    width: 90%; /* Adjust width for consistent alignment */
+    text-align: left;
+}
+
+.arrow_left {
+    width: 40px; /* Slightly smaller size */
+    transform: rotate(90deg); /* Keep arrow rotated */
+    opacity: 0.8;
+    margin-top: -1.5rem; /* Pull arrow closer to the step above */
+    margin-bottom: -1rem; /* Pull arrow closer to the step below */
+    align-self: flex-start; /* Align arrow with the top of each step */
+}
+
+.arrow_right {
+    width: 40px; /* Slightly smaller size */
+    opacity: 0.8;
+    margin-top: -1.5rem; /* Pull arrow closer to the step above */
+    margin-bottom: -1rem; /* Pull arrow closer to the step below */
+    align-self: flex-end; /* Align arrow with the top of each step */
+}
