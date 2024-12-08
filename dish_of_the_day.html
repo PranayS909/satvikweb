@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dish of the Day</title>
+    <title>Dish of the Day: Jackfruit Curry</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,116 +11,155 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
-        .header {
-            font-size: 28px;
-            font-weight: bold;
-            color: #4CAF50;
+
+        header {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .back-link {
             position: absolute;
             top: 10px;
-            right: 20px;
-            color: blue;
+            left: 20px;
+            color: #007BFF;
             text-decoration: none;
+            font-size: 16px;
         }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .header-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
         .dish-title {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: bold;
             margin: 10px 0;
+            text-align: center;
+            color: #333;
         }
+
         .content {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
             margin-top: 20px;
         }
-        .left-section {
+
+        .section {
             flex: 1;
-            margin-right: 20px;
-        }
-        .right-section {
-            flex: 1;
-        }
-        .center-section {
-            flex: 2;
-            text-align: center;
-        }
-        .ingredients, .fact-box {
-            background-color: #eaeaea;
             padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
         }
+
+        .ingredients ul,
+        .steps ol {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .fact-box,
+        .ingredients,
+        .steps {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
         .image-container img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
-        .step {
-            background-color: #eaeaea;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            font-weight: bold;
 
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px;
+        }
 
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
 
+            .back-link {
+                position: static;
+                display: block;
+                margin-bottom: 10px;
+                text-align: center;
+            }
 
+            .dish-title {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="landingpg.html" class="back-link">Back</a>
-        <div class="header">Dish Of The Day!</div>
+        <a href="landingpg.html" class="back-link">Back to Home</a>
+        <header>
+            <div class="header-title">Dish of the Day!</div>
+        </header>
         <div class="dish-title">Jackfruit Curry</div>
         <div class="content">
-            <div class="left-section">
-                <div class="ingredients">
-                    Ingredients:
-                    <ul>
-                        <li>Jackfruit (unripe)</li>
-                        <li>Bengal gram</li>
-                        <li>Oil</li>
-                        <li>Potato</li>
-                        <li>Spices (turmeric, cumin, coriander, red chili powder, garam masala)</li>
-                        <li>Ginger</li>
-                        <li>Bay leaves, dry red chilies</li>
-                        <li>Salt and sugar</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="center-section">
-                <div class="image-container">
-                    <img src="jackfruit_pic_bgrm-removebg-preview.png" alt="Jackfruit Curry">
-                </div>
-            </div>
-
-            <div class="right-section">
-                <div class="fact-box">
-                    Fact about dish: The unripe jackfruit used in curry has a fibrous, meaty texture that closely resembles shredded chicken, making it a popular plant-based alternative in vegetarian and vegan dishes. This texture allows it to absorb spices and flavors well, enhancing the curry's richness.
-                </div>
-                <div class="steps">
-                    Steps:
-                    <ol>
-                        <li>Cut the jackfruit into medium-sized pieces. Soak the pieces in water with a pinch of turmeric for 15-20 minutes to reduce the sap, making it easier to handle. Soak the bengal gram for at least an hour, then grind it into a smooth paste.</li>
-                        <li>Heat oil in a wok or kadai. Take small portions of the bengal gram paste and deep fry them to make pakoras. Fry until golden and set aside.</li>
-                        <li>Boil the jackfruit pieces in a pressure cooker for just 1 whistle and then remove.</li>
-                        <li>Heat oil in a pan or kadai. Sauté the boiled jackfruit pieces and potato cubes with salt and a pinch of turmeric over medium flame. Once done, remove from the flame and set aside. In the same pan, heat oil and add dry red chilies. Sauté until they darken. Add bay leaves, sauté, and then add paanchphoron. Let it splatter. Add grated ginger and sauté. Then add coriander powder, cumin powder, turmeric powder, and red chili powder. Sauté until the spices blend and the oil begins to separate.</li>
-                        <li>Add the sautéed jackfruit and potato mixture to the spice mix and combine well. Add salt and sugar, mix, sprinkle water, and sauté for 3-4 minutes on low flame. Add water to reach the desired gravy consistency and bring to a boil. Add garam masala.</li>
-                        <li>Add the fried bengal gram fritters and cook for another 2-3 minutes with the lid on.</li>
-                        <li>Simmer for 1 more minute and then switch off the flame.</li>
-                    </ol>
-                </div>
-            </div>
+            <section class="section ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>Jackfruit (unripe)</li>
+                    <li>Bengal gram</li>
+                    <li>Oil</li>
+                    <li>Potato</li>
+                    <li>Spices (turmeric, cumin, coriander, red chili powder, garam masala)</li>
+                    <li>Ginger</li>
+                    <li>Bay leaves, dry red chilies</li>
+                    <li>Salt and sugar</li>
+                </ul>
+            </section>
+            <section class="section image-container">
+                <img src="jackfruit_pic_bgrm-removebg-preview.png" alt="A delicious bowl of Jackfruit Curry">
+            </section>
+            <section class="section fact-box">
+                <h2>Did You Know?</h2>
+                <p>The unripe jackfruit has a fibrous, meaty texture that resembles shredded chicken, making it a favorite plant-based alternative in vegetarian and vegan dishes. It absorbs spices beautifully, enhancing the curry's flavor profile.</p>
+            </section>
+        </div>
+        <div class="content">
+            <section class="section steps">
+                <h2>Steps to Make Jackfruit Curry</h2>
+                <ol>
+                    <li>Cut the jackfruit into medium-sized pieces and soak in water with turmeric for 15-20 minutes to reduce sap.</li>
+                    <li>Soak Bengal gram for at least an hour and grind into a smooth paste.</li>
+                    <li>Deep fry small portions of the Bengal gram paste into pakoras and set aside.</li>
+                    <li>Boil jackfruit in a pressure cooker for 1 whistle, then sauté with potatoes in oil.</li>
+                    <li>Prepare a spice mix using turmeric, coriander, cumin, and chili powder. Sauté with ginger, bay leaves, and dry red chilies.</li>
+                    <li>Combine the spice mix with sautéed jackfruit and potatoes, add water for gravy, and bring to a boil. Add garam masala.</li>
+                    <li>Add fried pakoras, cook for 2-3 minutes, and serve hot.</li>
+                </ol>
+            </section>
         </div>
     </div>
+    <footer>
+        © 2024 Dish of the Day. All Rights Reserved.
+    </footer>
 </body>
 </html>
