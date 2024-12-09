@@ -57,7 +57,12 @@
           <label for="method">Cooking Method:</label>
           <textarea id="method" name="method" required></textarea>
 
-          <button type="submit">Submit Recipe</button>
+          <button
+            onclick="submitRecipe()"
+            class="js-submit-button"
+            type="submit">
+            Submit Recipe
+          </button>
         </form>
       </div>
     </section>
@@ -118,5 +123,6 @@
         </p>
       </div>
     </footer>
+    <script src="community-page.js"></script>
   </body>
 </html>
