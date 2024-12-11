@@ -56,15 +56,6 @@ body {
   .title-section p {
     font-size: 1.5rem; /* Adjust as needed */
     margin-top: 0;
-    background-color: #f9f9f9;
-    border-radius: 10px ;
-    background-color: transparent;
-    
-    padding: 1px; 
-    width: 100%;
-    margin: 20px;
-    margin-left: 0%;
-    text-align: center;
   }
   
   .search-bar {
