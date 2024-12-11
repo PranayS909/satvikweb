@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +32,7 @@
     <div class="content">
       <section class="section ingredients">
         <h2>Groups</h2>
-        <ul style="text-decoration: none; list-style: none;">
+        <ul style="text-decoration: none;">
           <li>Ancient Recipes</li>
           <li>Regional Foods</li>
           <li>Satvik Challenges</li>
@@ -36,8 +40,25 @@
           <li>Health Tips</li>
         </ul>
       </section>
+      <div class="content-2">
+      <section class="tweet-composer">
+        <h2>Write a Tweet</h2>
+        <textarea id="tweet-box" placeholder="What's happening?" rows="4"></textarea>
+        <div class="tweet-actions">
+          <button class="tweet-button">
+            <i class="fas fa-image"></i> Image
+          </button>
+          <button class="tweet-button">
+            <i class="fas fa-location-arrow"></i> Send
+          </button>
+        </div>
+    </section>
     </div>
     </div>
+    </div>
+    <footer>
+        © 2024 Satvik Ahar. All Rights Reserved.
+    </footer>
     <script src="join-disscussion.js"></script>
   </body>
 </html>
