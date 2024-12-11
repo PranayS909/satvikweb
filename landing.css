@@ -29,8 +29,7 @@
   }
   
   .r_s{
-    min-height: 4;
-    width : auto;
+    object-fit: contain;
   }
    
   
