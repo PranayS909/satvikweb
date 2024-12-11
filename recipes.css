@@ -1,14 +1,14 @@
 /* Global styles */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f7f4eb;
     color: #333;
     line-height: 1.6;
   }
   
   header {
-    background-color: #4CAF50;
+    background: linear-gradient(90deg, #4CAF50, #a8e063);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,19 +37,23 @@ body {
   }
   
   .title-section {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: #E8F5E9;
-    color: #4CAF50;
+    background-image: url('Images/image.png');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: bottom; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    color: white; /* Adjust text color for visibility */
+    text-align: center; /* Centers the text */
+    padding: 100px 20px; /* Adds space around the text */
   }
   
   .title-section h1 {
-    font-size: 36px;
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 10px;
   }
   
   .title-section p {
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 1.5rem; /* Adjust as needed */
+    margin-top: 0;
   }
   
   .search-bar {
