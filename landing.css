@@ -1,84 +1,181 @@
-*{
-    background-color: #f5f1e1;
-    padding: 0;
-    margin: 0;
-  }
+/* Global Styles */
+* {
   
-  .logo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1a5238;
-    font: size 400px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    padding: 1rem;
-    color: #7f9a3c;
-    font-weight: bold;
-  
-  }
-  
-  nav{
-    display: flex;
-    align-items: center;
-  }
-  
-  .right-side {
-    display: flex;
-    margin-left: auto;
-  }
-  
-  .r_s{
-    object-fit: contain;
-  }
-   
-  
-  .image-container {
-   
-    aspect-ratio:auto 1000/200;
-    width:1000px
-    
-  }
-  
-   /* Clickable Section */
-          .clickable-section {
-              display: flex;
-              justify-content: space-around;
-              padding: 60px 20px;
-              background-color: #f5f1e1;
-              text-align: center;
-          }
-  
-          .clickable-card {
-              background-color: #1a5238;
-              border-radius: 10px ;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              padding: 30px;
-              width: 30%;
-              margin: 20px;
-              cursor: pointer;
-              transition: transform 0.3s ease;
-          }
-  
-          .clickable-card:hover {
-              transform: translateY(-10px);
-          }
-  
-          .clickable-card h3 {
-              color: #000000;
-              border:solid;
-              border-color:#ffb233;
-              background-color:#FFB233;
-              height:10%;
-              border-radius:0px 0px 10px 10px ;
-              padding: 16px;
-          }
-  
-          .clickable-card p {
-              color: #555;
-          }
-  
-  
-         .pic{
-         border-radius: 8px 8px 0px 0px ;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a5238;
+  padding: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 36px;
+  font-family: Georgia, serif;
+}
+
+.right-side a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.r_s img {
+  border-radius: 50%;
+}
+
+/* Hero Section */
+.image-container {
+  background-image: url('Images/satvic.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #FFB233;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #1a5238;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #e0a329;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Introduction Section */
+.intro-section p {
+  font-size: 18px;
+}
+
+/* Featured Recipe Section */
+.featured-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Recipe Categories Section */
+.recipe-categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.category-card {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.category-card a {
+  display: block;
+  margin-top: 10px;
+  color: #1a5238;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* Social Media Section */
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a5238;
+  color: white;
+}
+
+footer a {
+  color: #FFB233;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter Subscription */
+.newsletter-section form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-section input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.newsletter-section button {
+  padding: 10px 20px;
+  background-color: #FFB233;
+  border: none;
+  border-radius: 5px;
+  color: #1a5238;
+  font-weight: bold;
+}
