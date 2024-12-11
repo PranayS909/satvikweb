@@ -118,4 +118,10 @@ footer a {
   border-radius: 4px;
   color: #45a049;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background-color: #45a049;
+  color: white;
 }
