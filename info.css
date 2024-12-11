@@ -9,21 +9,40 @@ body {
 }
 
 header {
-    background: #6aa84f;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    text-align: left;
+    
 }
 
 header p {
     margin-top: 0.5rem;
     font-size: 1.2rem;
+    text-align: left;
 }
+
+.nav a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav a.active, .nav a:hover {
+    color: #fdf5df;
+  }
 
 /* Section Styles */
 .content-section {
@@ -64,7 +83,6 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
