@@ -38,22 +38,13 @@ body {
   
   .title-section {
     background-image: url('Images/image.png');
-<<<<<<< Updated upstream
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: bottom; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling of the image */
     color: white; /* Adjust text color for visibility */
     text-align: center; /* Centers the text */
     padding: 100px 20px; /* Adds space around the text */
-=======
-    
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: bottom; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling of the image */
-  color: white; /* Adjust text color for visibility */
-  text-align: center; /* Centers the text */
-  padding: 100px 20px; /* Adds space around the text */
->>>>>>> Stashed changes
+
   }
   
   .title-section h1 {
