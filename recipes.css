@@ -44,6 +44,7 @@ body {
     color: white; /* Adjust text color for visibility */
     text-align: center; /* Centers the text */
     padding: 100px 20px; /* Adds space around the text */
+    
 
   }
   
@@ -55,6 +56,15 @@ body {
   .title-section p {
     font-size: 1.5rem; /* Adjust as needed */
     margin-top: 0;
+    background-color: #f9f9f9;
+    border-radius: 10px ;
+    background-color: transparent;
+    
+    padding: 1px; 
+    width: 100%;
+    margin: 20px;
+    margin-left: 0%;
+    text-align: center;
   }
   
   .search-bar {
@@ -151,7 +161,7 @@ body {
   }
   
   .footer {
-    background-color: #4CAF50;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 15px;
