@@ -1,84 +1,108 @@
-*{
-    background-color: #f5f1e1;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .logo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1a5238;
-    font: size 400px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    padding: 1rem;
-    color: #7f9a3c;
-    font-weight: bold;
-  
-  }
-  
-  nav{
-    display: flex;
+*/* Basic Styling for the Body */
+body {
+  background: linear-gradient(to right, #f5f1e1, #f9f0e1);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50; /* Green background */
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+nav .right-side a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+nav .right-side a:hover {
+  color: #ffd700; /* Gold color */
+  text-decoration: underline;
+}
+
+nav .profile a img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Header Image */
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #4CAF50;
+}
+
+/* Card Section */
+.clickable-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.clickable-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+}
+
+.clickable-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 5px solid #4CAF50;
+  transition: transform 0.3s ease;
+}
+
+.clickable-card h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px;
+  color: #333;
+}
+
+.clickable-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.clickable-card:hover img {
+  transform: scale(1.05);
+}
+
+.clickable-card a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .clickable-section {
+    flex-direction: column;
     align-items: center;
   }
-  
-  .right-side {
-    display: flex;
-    margin-left: auto;
+
+  .clickable-card {
+    width: 90%;
   }
-  
-  .r_s{
-    object-fit: contain;
-  }
-   
-  
-  .image-container {
-   
-    aspect-ratio:auto 1000/200;
-    width:1000px
-    
-  }
-  
-   /* Clickable Section */
-          .clickable-section {
-              display: flex;
-              justify-content: space-around;
-              padding: 60px 20px;
-              background-color: #f5f1e1;
-              text-align: center;
-          }
-  
-          .clickable-card {
-              background-color: #1a5238;
-              border-radius: 10px ;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              padding: 30px;
-              width: 30%;
-              margin: 20px;
-              cursor: pointer;
-              transition: transform 0.3s ease;
-          }
-  
-          .clickable-card:hover {
-              transform: translateY(-10px);
-          }
-  
-          .clickable-card h3 {
-              color: #000000;
-              border:solid;
-              border-color:#ffb233;
-              background-color:#FFB233;
-              height:10%;
-              border-radius:0px 0px 10px 10px ;
-              padding: 16px;
-          }
-  
-          .clickable-card p {
-              color: #555;
-          }
-  
-  
-         .pic{
-         border-radius: 8px 8px 0px 0px ;
-  }
+}

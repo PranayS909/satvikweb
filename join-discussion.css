@@ -1,5 +1,6 @@
 /* styles.css */
 body {
+  margin: 0;
   font-family: poppins;
   background-color: #f4f4f9;
   color: var(--font-color);
@@ -33,6 +34,7 @@ body {
 
 .back-to-home {
   width: 60%;
+  margin-top: 10px;
 }
 
 .header {
@@ -91,78 +93,12 @@ body {
 }
 
 .content li:hover {
+  color: white;
   text-shadow: black;
   background: linear-gradient(90deg, #4CAF50, #a8e063);
   border-radius: 6px;
-}
-
-.groups-container {
-  width: 100%;
-  max-width: 300px;
-  padding: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 2em;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  cursor: pointer;
-}
-
-.groups-container:focus,
-.groups-container:hover {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 10px rgba(44, 122, 123, 0.3);
-}
-
-.groups-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.groups-header h2 {
-  font-size: 1.2rem;
-  margin: 0;
-  color: var(--font-color);
-}
-
-.groups-header .groups-icon {
-  font-size: 1.2rem;
-  color: var(--font-color);
-  transition: transform 0.3s ease;
-}
-
-.groups-container:hover .groups-icon,
-.groups-container:focus .groups-icon {
-  transform: rotate(180deg);
-}
-
-.groups-list {
-  list-style: none;
-  margin: 1rem 0 0;
-  padding: 0;
-  display: none;
-  background: var(--secondary-color);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.groups-list li {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--border-color);
-  color: var(--font-color);
-  transition: background-color 0.3s ease;
-}
-
-.groups-list li:hover {
-  background-color: var(--hover-color);
-  color: var(--primary-color);
-}
-
-.groups-container:hover .groups-list,
-.groups-container:focus .groups-list {
-  display: block;
+  padding-left: 10px;
+  width: 80%;
 }
 
 .main-content {
@@ -247,6 +183,75 @@ body {
 .search-bar input:focus {
   outline: none;
   border-color: var(--primary-color);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #4CAF50, #a8e063);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content-2 {
+  width: 100%;
+}
+
+/* Tweet Composer Styles */
+.tweet-composer {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px auto;
+}
+
+.tweet-composer h2 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+#tweet-box {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.tweet-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.tweet-button {
+  background-color: #38a169;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tweet-button:hover {
+  background-color: #2f855a;
+}
+
+.tweet-button i {
+  font-size: 1.2rem;
 }
 
 /* Responsive Design */
