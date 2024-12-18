@@ -19,6 +19,38 @@ body {
     padding: 20px;
 }
 
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    left: -250px;  /* Sidebar starts hidden */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;  /* Smooth transition for showing/hiding */
+}
+
+/* When the sidebar is active, move it to the left */
+#sidebar.active {
+    left: 0;  /* Sidebar becomes visible */
+}
+
+/* Main content area */
+#main-content {
+    transition: margin-left 0.3s ease;  /* Smooth transition for content shift */
+}
+
+/* Button to toggle sidebar visibility */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+
+
 
 .sidebar .profile {
     text-align: center;
