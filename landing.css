@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 */* Global Styles */
-=======
-/* Global Styles */
->>>>>>> 9c2e9d811a933ee90beb3e30721139bd79a1e0c4
 * {
   
   margin: 0;
@@ -69,10 +65,7 @@ nav {
   text-decoration: none;
   color: #1a5238;
   font-weight: bold;
-<<<<<<< HEAD
   margin-top: 30%;
-=======
->>>>>>> 9c2e9d811a933ee90beb3e30721139bd79a1e0c4
 }
 
 .cta-button:hover {
@@ -164,7 +157,6 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-<<<<<<< HEAD
 }
 
 /* Newsletter Subscription */
@@ -188,28 +180,4 @@ footer a:hover {
   color: #1a5238;
   font-weight: bold;
   margin-top: 30%;
-=======
->>>>>>> 9c2e9d811a933ee90beb3e30721139bd79a1e0c4
-}
-
-/* Newsletter Subscription */
-.newsletter-section form {
-  display: flex;
-  justify-content: center;
-}
-
-.newsletter-section input[type="email"] {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 250px;
-}
-
-.newsletter-section button {
-  padding: 10px 20px;
-  background-color: #FFB233;
-  border: none;
-  border-radius: 5px;
-  color: #1a5238;
-  font-weight: bold;
 }
