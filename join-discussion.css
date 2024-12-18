@@ -12,6 +12,8 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -29,6 +31,7 @@ header {
 
 .back-link {
   display: inline-block;
+  max-width: fit-content;
   color: #4CAF50;
   text-decoration: none;
   background-color: #e8f5e9;
@@ -77,6 +80,18 @@ header {
   transform: scale(1.02);
 }
 
+.ingredients li {
+  cursor: pointer;
+}
+
+.ingredients {
+  background-color: #f9f9f9;
+}
+
+.ingredients li:hover {
+  background-color: linear-gradient(90deg, #4CAF50, #a8e063);
+}
+
 .ingredients ul,
 .steps ol {
   padding-left: 20px;
@@ -115,6 +130,47 @@ footer {
   color: white;
   font-size: 14px;
   font-weight: bold;
+}
+
+.search-bar {
+  font-size: 0.6em;
+  width: 80%;
+  height: 2em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: #4CAF50 1px solid;
+  outline: none;
+}
+
+.fact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweet-writing-area {
+  margin-top: 5%;
+  height: 80%;
+  width: 90%;
+  outline: none;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 10px;
+}
+
+.post-btn {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #4CAF50;
+  border: #4CAF50 1px solid;
+  border-radius: 5px;
+  height: 2em;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  cursor: pointer;
 }
 
 /* Responsive Design */
