@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to make a refreshing Greek Salad with a hint of Indian flair. Simple ingredients, easy steps, and a delightful taste!">
+    <title>Dish of the Day: Greek Salad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .nav-bar {
+            margin-top: 10px;
+        }
+
+        .nav-bar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-bar a:hover {
+            background-color: #388e3c;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .dish-title {
+            font-size: 36px;
+            font-weight: 600;
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            transition: transform 0.2s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .ingredients ul,
+        .steps ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .ingredients ul li,
+        .steps ol li {
+            margin-bottom: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .fact-box {
+            background-color: #f0f9eb;
+            color: #2e7d32;
+            font-weight: 500;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .section {
+                flex: 1 1 100%;
+            }
+
+            .dish-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Dish of the Day</div>
+        <div class="nav-bar">
+            <a href="recipes.html">Home</a>
+            <a href="#ingredients">Ingredients</a>
+            <a href="#steps">Steps</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="dish-title">Greek Salad</div>
+        <div class="content">
+            <section id="ingredients" class="section ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup cucumber (diced)</li>
+                    <li>1 cup tomatoes (diced)</li>
+                    <li>1/2 cup carrots (grated)</li>
+                    <li>2 tbsp coriander leaves (finely chopped)</li>
+                    <li>1 tbsp mint leaves (optional, finely chopped)</li>
+                    <li>Feta cheese</li>
+                    <li>1 tbsp lemon juice</li>
+                    <li>Salt to taste</li>
+                </ul>
+            </section>
+
+            <section class="section image-container">
+                <img src="Greek-Salad-with-lettuce-no-onion-2.jpg" alt="A refreshing bowl of Greek Salad">
+            </section>
+
+            <section class="section fact-box">
+                <h2>Did You Know?</h2>
+                <p>Greek salad, or Horiatiki, is traditionally a "village salad" in Greece. It features fresh ingredients like tomatoes, cucumbers, olives, and feta, served without lettuce for a truly authentic taste!</p>
+            </section>
+        </div>
+
+        <div class="content">
+            <section id="steps" class="section steps">
+                <h2>Steps to Make Greek Salad</h2>
+                <ol>
+                    <li>Wash and dice the cucumber and tomatoes.</li>
+                    <li>Grate the carrots, and finely chop the coriander and mint leaves.</li>
+                    <li>In a mixing bowl, combine cucumber, tomatoes, carrots, and herbs.</li>
+                    <li>Crumble or dice the feta cheese and gently toss into the salad.</li>
+                    <li>Mix 1 tbsp lemon juice with a pinch of salt to prepare the dressing.</li>
+                    <li>Drizzle the dressing over the salad and toss lightly.</li>
+                    <li>Serve fresh and enjoy!</li>
+                </ol>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Dish of the Day. All Rights Reserved.
+    </footer>
+</body>
+</html>
