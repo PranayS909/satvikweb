@@ -1,0 +1,10 @@
+<section class="groups-card card">
+            <h2>Groups</h2>
+            <ul>
+                <li>Ancient Recipes</li>
+                <li>Regional Foods</li>
+                <li>Satvik Challenges</li>
+                <li>Yoga and Diet</li>
+                <li>Health Tips</li>
+            </ul>
+        </section

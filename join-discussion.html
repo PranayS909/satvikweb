@@ -17,45 +17,37 @@
   </head>
   <body>
     <div class="back-to-home">
-      <a href="landingpg2.html" class="back-link">Back to Home</a>
+      <a href="landingpg2.html" class="back-to-home-btn">Back to Home</a>
     </div>
 
-    <header class="header">
+    <header>
       <h1>Community</h1>
     </header>
-    <div class="search-container">
-      <input
-        type="text"
-        placeholder="Search people, topics..."
-        id="search-input" />
-    </div>
-    <div class="content">
-      <section class="section ingredients">
-        <h2>Groups</h2>
-        <ul style="text-decoration: none;">
-          <li>Ancient Recipes</li>
-          <li>Regional Foods</li>
-          <li>Satvik Challenges</li>
-          <li>Yoga and Diet</li>
-          <li>Health Tips</li>
-        </ul>
-      </section>
-      <div class="content-2">
-      <section class="tweet-composer">
-        <h2>Write a Tweet</h2>
-        <textarea id="tweet-box" placeholder="What's happening?" rows="4"></textarea>
-        <div class="tweet-actions">
-          <button class="tweet-button">
-            <i class="fas fa-image"></i> Image
-          </button>
-          <button class="tweet-button">
-            <i class="fas fa-location-arrow"></i> Send
-          </button>
-        </div>
-    </section>
-    </div>
-    </div>
-    </div>
+    
+    <input type="text" class="search-bar" placeholder="Search people, topics...">
+    <!-- Main Content -->
+    <main>
+        <!-- Groups Section -->
+        <section class="groups-card card">
+            <h2>Groups</h2>
+            <ul>
+                <li>Ancient Recipes</li>
+                <li>Regional Foods</li>
+                <li>Satvik Challenges</li>
+                <li>Yoga and Diet</li>
+                <li>Health Tips</li>
+            </ul>
+        </section>
+
+        <!-- Write a Tweet Section -->
+        <section class="tweet-card card">
+            <h2>Write a Tweet</h2>
+            <textarea class="writing-area" placeholder="What's happening?"></textarea>
+            <div class="button-group">
+                <button class="image-btn">📷 Image</button>
+                <button class="send-btn">Post</button>
+            </div>
+        </section>
     <footer>
         © 2024 Satvik Ahar. All Rights Reserved.
     </footer>
