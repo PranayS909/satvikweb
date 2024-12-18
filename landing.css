@@ -1,108 +1,181 @@
-*/* Basic Styling for the Body */
-body {
-  background: linear-gradient(to right, #f5f1e1, #f9f0e1);
-  font-family: 'Roboto', sans-serif;
+/* Global Styles */
+* {
+  
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Navigation Bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #4CAF50; /* Green background */
-  padding: 15px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav .logo {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #fff;
-  margin: 0;
-}
-
-nav .right-side a {
-  margin: 0 20px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.1em;
-}
-
-nav .right-side a:hover {
-  color: #ffd700; /* Gold color */
-  text-decoration: underline;
-}
-
-nav .profile a img {
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-
-/* Header Image */
-.image-container img {
-  width: 100%;
-  height: auto;
-  border-bottom: 5px solid #4CAF50;
-}
-
-/* Card Section */
-.clickable-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 40px 20px;
-  gap: 30px;
-}
-
-.clickable-card {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  width: 280px;
-  text-align: center;
-}
-
-.clickable-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 5px solid #4CAF50;
-  transition: transform 0.3s ease;
-}
-
-.clickable-card h3 {
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 10px;
+body {
+  font-family: 'Arial', sans-serif;
   color: #333;
 }
 
-.clickable-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a5238;
+  padding: 20px;
 }
 
-.clickable-card:hover img {
-  transform: scale(1.05);
+.logo {
+  color: white;
+  font-size: 36px;
+  font-family: Georgia, serif;
 }
 
-.clickable-card a {
+.right-side a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.r_s img {
+  border-radius: 50%;
+}
+
+/* Hero Section */
+.image-container {
+  background-image: url('Images/satvic.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #FFB233;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #1a5238;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #e0a329;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Introduction Section */
+.intro-section p {
+  font-size: 18px;
+}
+
+/* Featured Recipe Section */
+.featured-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Recipe Categories Section */
+.recipe-categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.category-card {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.category-card a {
   display: block;
+  margin-top: 10px;
+  color: #1a5238;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* Social Media Section */
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a5238;
+  color: white;
+}
+
+footer a {
+  color: #FFB233;
   text-decoration: none;
 }
 
-/* Media Query for Small Screens */
-@media (max-width: 768px) {
-  .clickable-section {
-    flex-direction: column;
-    align-items: center;
-  }
+footer a:hover {
+  text-decoration: underline;
+}
 
-  .clickable-card {
-    width: 90%;
-  }
+/* Newsletter Subscription */
+.newsletter-section form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-section input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.newsletter-section button {
+  padding: 10px 20px;
+  background-color: #FFB233;
+  border: none;
+  border-radius: 5px;
+  color: #1a5238;
+  font-weight: bold;
 }
